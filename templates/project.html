@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", Verdana, sans-serif;
+    color: rgb(2, 2, 2);
+}
+:root {
+    --color1 : rgb(69, 37, 130);
+    --color2 : #353965;
+    --color3 : rgb(220, 220, 247);
+    --color4 : #ff996e;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-color: rgb(20, 3, 63);
+    min-height: 100vh;
+    background-color: rgb(169, 228, 246);
+}
+
+.nav-bar {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 5em;
+    gap: 2em;
+    font-size: 1.4rem;
+    font-weight: 500;
+    height: 6rem;
+    background-color: #201b3944;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(10px);
+}
+
+.nav-item {
+    text-decoration: none;
+}
+
+#project-title {
+    font-size: 2rem;
+    color: rgb(3, 3, 3);
+    transition: all 0.3s;
+    font-family: "Gill Sans Extrabol";
+}
+
+#project-title:hover {
+    color: var(--color3);
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    flex-direction: column;
+    height: auto;
+    margin-bottom: -2px;
+    min-height: 100vh;
+    padding: 6em 6em 6em;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10rem);
+}
+
+.welcome {
+    margin-top: 2em;
+    font-weight: 500;
+    text-wrap: wrap;
+}
+
+.welcome p {
+    font-size: 1.8rem;
+    word-spacing: 5px;
+    text-align: center;
+}
+
+.container {
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 2em 0em;
+    padding: 4em;
+    backdrop-filter: blur(5px);
+    background-color: aliceblue;
+    border-radius: 8px;
+    color: black;
+    width: 60vh;
+    max-width: 80vh;
+}
+
+.form-option {
+    min-width: 45vh;
+    padding: 10px;
+    color: black;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: aliceblue;
+    font-size: 1.1rem;
+    transition: all 0.2s;
+    margin-bottom: 2em;
+}
+
+.form-option:focus {
+    border-color: #7378f7;
+    box-shadow: 0 0 5px rgba(103, 90, 205, 0.5);
+}
+
+.form-option option[value=""] {
+    color: #666;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 1.8rem;
+}
+
+.form-option option {
+    color: #000;
+}
+
+.form-group input,
+.form-group textarea {
+    min-width: 45vh;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: aliceblue;
+    font-size: 1rem;
+    transition: all 0.2s;
+    font-size: 1.1rem;
+    color: #000;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #7373f7;
+    box-shadow: 0 0 5px rgba(119, 90, 205, 0.5);
+    outline: none;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+.form-group label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 1rem;
+    color: #666;
+    transition: all 0.3s;
+    pointer-events: none;
+}
+
+.form-group input:focus+label,
+.form-group input:not(:placeholder-shown)+label,
+.form-group textarea:focus+label,
+.form-group textarea:not(:placeholder-shown)+label {
+    top: -24px;
+    left: 10px;
+    font-size: 0.8rem;
+    color: #333;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1em;
+}
+
+.container button,
+.container a {
+    width: auto;
+    border: none;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    border-radius: 2rem;
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    transition: all 0.5s;
+    background-color: rgb(60, 46, 90);
+}
+
+.container button:hover {
+    background-color: rgb(71, 63, 139);
+}
+
+.container a {
+    background-color: rgb(92, 88, 88);
+}
+
+.container a:hover {
+    background-color: rgb(139, 145, 154);
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form | Insurance</title>
+    <link rel="stylesheet" href="/static/styles/form.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <a id="project-title" class="nav-item" href="/">Insurance</a>
+        </nav>
+    </header>
+    <main>
+        <div class="welcome">
+            <p>Welcome to Insurance Form</p>
+        </div>
+
+        <div class="container">
+            <form action="{{  url_for('prediction')  }}" method="post">
+                <div class="form-group">
+                    <input type="number" id="age" name="age" min="1" max="120" placeholder=" "  autocomplete="off" required maxlength="10">
+                    <label for="age">Age</label>
+                </div>
+                <label for="gender"></label>
+                <select class="form-option" id="gender" name="gender" required>
+                    <option value="" selected disabled hidden>Gender</option>
+                    <option value="1">Male</option>
+                    <option value="0">Female</option>
+                </select>
+
+                <select class="form-option" id="blood" name="blood" required>
+                    <option value="" selected disabled hidden>Blood Type</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                </select>
+                <select class="form-option" id="condition" name="condition" required>
+                    <option value="" selected disabled hidden>Medical Condition</option>
+                    <option value="Arthritis">Arthritis</option>
+                    <option value="Diabetes">Diabetes</option>
+                    <option value="Hypertension">Hypertension</option>
+                    <option value="Obesity">Obesity</option>
+                    <option value="Cancer">Cancer</option>
+                    <option value="Asthma">Asthma</option>
+                </select>
+                <select class="form-option" id="insurance" name="insurance" required>
+                    <option value="" selected disabled hidden>Insurance Type</option>
+                    <option value="Cigna">Cigna</option>
+                    <option value="Medicare">Medicare</option>
+                    <option value="United Healthcare">United Healthcare</option>
+                    <option value="Blue Cross">Blue Cross</option>
+                    <option value="Aetna">Aetna</option>
+                </select>
+                <select class="form-option" id="admission" name="admission" required>
+                    <option value="" selected disabled hidden>Admission Type</option>
+                    <option value="Elective">Elective</option>
+                    <option value="Urgent">Urgent</option>
+                    <option value="Emergency">Emergency</option>
+                </select>
+                <select class="form-option" id="test" name="test" required>
+                    <option value="" selected disabled hidden>Test Results</option>
+                    <option value="Abnormal">Abnormal</option>
+                    <option value="Normal">Normal</option>
+                    <option value="Inconclusive">Inconclusive</option>
+                </select>
+                <div class="button-container">
+                    <a href="/">Back</a>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+</body>
+
+</html>

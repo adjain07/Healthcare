@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="/static/project.css">
+</head>
+<style>
+    body{
+        background-color:rgb(169, 228, 246);
+        background-size: 50rem;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size:27px;
+        padding: 120px;
+        text-align: center;
+        color: rgb(7, 133, 244);
+    }
+    .pred{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: #0808d6;
+        font-size: 30px;
+        text-decoration: underline;
+    }
+    #contact-form {
+        max-width: 500px;
+        margin: 40px auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border: 1px solid #090909;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    a{
+        color: rgb(15, 14, 14);
+    }
+    a:hover{
+        color: rgb(233, 6, 6);
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="card" id="contact-form">
+            <h2>Prediction Result</h2>
+            <div class="pred">
+            <hr><p><strong>Prediction:</strong> {{ output }}</p>
+            </div>
+            <a href="/project">Go Back</a>
+        </div>
+    </div>
+</body>
+</html>

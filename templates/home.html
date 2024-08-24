@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HELATH</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="JavaScript" href="/static/js/script.js"> 
+<style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", Verdana, sans-serif;
+    color: rgb(13, 13, 13);
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x:hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background: url(https://aihms.in/blog/wp-content/uploads/2020/04/healthcare1.jpg);
+    background-size: 100%;
+}
+
+
+
+.nav-bar {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 5em;
+    gap: 2em;
+    font-size: 1.4rem;
+    font-weight: 500;
+    height: 6rem;
+    background-color: #201b3944;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(10px);
+}
+
+.nav-bar ul {
+    display: flex;
+    gap: 2em;
+    list-style: none;
+}
+
+.nav-bar ul a {
+    position: relative;
+    color: white;
+    margin: 3px;
+    transition: all 0.3s ;
+    padding-bottom: 3px;
+}
+
+.nav-bar ul a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #2c186d;
+    transition: 0.2s;
+}
+
+.nav-bar ul a:hover::before {
+    width: 100%;
+}
+
+.nav-item {
+    text-decoration: none;
+}
+
+#project-title {
+    font-size: 3rem;
+    color: rgb(11, 11, 11);
+    transition: all 0.3s;
+    font-family:Gill Sans Extrabold;
+}
+#project-title:hover {
+    color: var(--color3);
+}
+
+.page {
+    height: auto;
+    margin-bottom: -2px;
+    min-height: 100vh;
+    padding: 8em 6em 6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* backdrop-filter: blur(10rem); */
+}
+
+.page p {
+    font-size: 5rem;
+    font-weight: 200;
+}
+
+.button {
+    text-decoration: none;
+    font-size: 2rem;
+    border: 1px solid none;
+    padding: 1em 3em;
+    border-radius: 10rem;
+    color: rgb(12, 12, 12);
+    box-shadow: 2px 4px 2px 1px rgb(0, 0, 0);
+    transition: all 0.5s;
+    z-index: 10;
+    font-weight: 600;
+}
+
+.button:hover {
+    color: #3a0202;
+    box-shadow: 0 2px 15px 5px rgb(220, 220, 247), 5px 0 15px 7px rgb(255, 126, 71);
+}
+
+
+.section {
+    background-color: #281f5087;
+    border-radius: 5px;
+    height: auto;
+    width: 100%;
+    padding: 3em;
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+}
+
+.section p {
+    font-size: 1.5rem;
+    margin:  1em;
+    font-weight: 400;
+    text-align: justify;
+    color: rgb(17, 16, 16);
+}
+
+</style>
+</head>
+
+<body>
+    <main>
+        <header>
+            <nav class="nav-bar">
+                <a id="project-title" class="nav-item" href="">Helath Care</a>
+                <ul>
+                    <li><a class="nav-item" href="#home">Home</a></li>
+                    <li><a class="nav-item" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="home" class="page">
+            <p>Welcome to HELATH CARE Website</p>
+            <a class="button" href="/project">Start</a>
+        </section>
+        <section  id="contact" class="page"  style="background-color: rgb(169, 228, 246);"id="contact" class="py-5" >
+            <div style="text-align: center;" class="container">
+                <a href="https://github.com/adjain07" target="_blank" class="btn btn-outline-secondary">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/aditya-bhura-a532522a2/" target="_blank" class="btn btn-outline-secondary">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.instagram.com/ad_.jain" target="_blank" class="btn btn-outline-secondary">
+                    <i class="fab fa-instagram"></i>
+                </a><br><br>
+                <h2 style="color: rgb(17, 16, 16);">Thank You For Visiting.</h2>
+            </div>
+        </section>
+    </main>
+    
+
+</body>
+
+</html>
